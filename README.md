@@ -1,11 +1,52 @@
-# ETL-Storage_Databricks_PowerBI
+# ETL-Azure-Storage_Databricks_PowerBI
 
-Extracción de datos de ventas trimestrales de ilevo desde Azure Blob Storage, para su transformación en Databricks y conexión con Power BI. 
+📌 Descripción del proyecto
 
-Se conecta Databricks con la cuenta de almacenamiento de Azure. Se hace uso del almacén de llaves para no publicar claves de acceso en el código.
-Una vez leído los datos, el dataframe se escribe en formato Delta Lake y se guarda en el catálogo de Databricks, con el objeto de realizar la corrección del nombre de producto y id de producto en factura específica de la tabla, y llevar el control de versiones o cambios en esta. 
+Este proyecto implementa un pipeline ETL de extremo a extremo para el análisis de ventas, integrando servicios de Azure y herramientas de Business Intelligence.
 
-Posteriormente, se enlaza la tabla de Databricks con Power BI desktop mediante dos métodos: ODBC y DirectQuery, para realizar análisis del comportamiento de las ventas.
+📥 Extracción de datos
+
+Extracción de datos de ventas trimestrales de ilevo desde Azure Blob Storage
+
+Conexión segura entre Databricks y la cuenta de almacenamiento mediante Azure Key Vault para la gestión de credenciales
+
+🔄 Transformación y almacenamiento
+
+Transformación de los datos en Databricks
+
+Escritura de los datos en formato Delta Lake
+
+Registro de la tabla en el catálogo de Databricks
+
+Corrección de inconsistencias en nombres e identificadores de producto
+
+Control de versiones y trazabilidad de cambios sobre los datos
+
+📊 Consumo en Business Intelligence
+
+Conexión de Databricks con Power BI Desktop
+
+Métodos de conexión utilizados:
+
+ODBC
+
+DirectQuery
+
+Análisis del comportamiento de las ventas mediante visualizaciones e indicadores
+
+🛠️ Tecnologías utilizadas
+
+Azure Blob Storage
+
+Azure Key Vault
+
+Databricks
+
+Delta Lake
+
+Power BI
+
+Python / PySpark
 
 https://github.com/DianaGarcesPortilla/ETL-Azure-Storage-Databricks-PowerBI/blob/main/ventas_integracionBI.ipynb
 
